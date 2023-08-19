@@ -191,7 +191,7 @@ function loadNextQuestion () {
         result.innerHTML =
          `<h1 class="final-score">${yourGourdType}</h1>
          <div class="summary" style="text-align: center;">
-            <img src=${imageURL} width="100%">
+            <img src=${imageURL} width="60%">
         </div>
         <button class="restart">Restart Quiz</button>
          `;
