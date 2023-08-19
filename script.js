@@ -1,11 +1,15 @@
 // QUESTIONS
+// Tyler this is where you'll edit the questions
+// to add images : upload the images to the folder
+// in the review thing at the bottom put the images in: imageURL = "pics/looser.jpg";
+// when you're all done, hit commit changes and text brian
 
 const questions = [
   {
     "question": "Age range?",
     "answer1": "under 18",
     "answer1Total": "1",
-    "answer2": "18 - 30",
+    "answer2": "18 - 30 heyooooo",
     "answer2Total": "2",
     "answer3": "over 30",
     "answer3Total": "3",
@@ -181,7 +185,7 @@ function loadNextQuestion () {
           imageURL = "https://cdn.britannica.com/47/190847-050-BEF036B6/loofah-interior.jpg";
         } else {
           yourGourdType = "You Suck :(";
-          imageURL = "pics/looser.jpg"
+          imageURL = "pics/looser.jpg";
         }
       
         result.innerHTML =
