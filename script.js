@@ -184,8 +184,8 @@ function loadNextQuestion () {
           yourGourdType = "Loofah";
           imageURL = "https://cdn.britannica.com/47/190847-050-BEF036B6/loofah-interior.jpg";
         } else {
-          yourGourdType = "You Suck :(";
-          imageURL = "pics/looser.jpg";
+          yourGourdType = "Gourdja";
+          imageURL = "pics/Gourdja.png";
         }
       
         result.innerHTML =
