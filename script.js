@@ -11,7 +11,7 @@ const questions = [
     "answer1Total": "1",
     "answer2": "Salsa Dancing",
     "answer2Total": "2",
-    "answer3": "Mock Plebians Together",
+    "answer3": "Mock Plebeians Together",
     "answer3Total": "3",
     "answer4": "Watch the ball machine at the Museum of Science",
     "answer4Total": "4",
