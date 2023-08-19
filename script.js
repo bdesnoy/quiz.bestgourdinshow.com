@@ -177,11 +177,17 @@ function loadNextQuestion () {
       
         var yourGourdType;
         var imageURL;
-        if (totalScore >= 35) {
-          yourGourdType = "Squash";
+        if (totalScore >= 33) {
+          yourGourdType = "Urp";
           imageURL = "https://www.southernliving.com/thmb/m5yYV-N0d9LcbpOcrw6quWSjbRE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Squash_001_preview_scale_100_ppi_150_quality_100-e57ac9624ce348adafefcae5577a1fdf.jpg";
         } else if (totalScore >= 30) {
-          yourGourdType = "Loofah";
+          yourGourdType = "Robo Gourd";
+          imageURL = "https://cdn.britannica.com/47/190847-050-BEF036B6/loofah-interior.jpg";
+        } else if (totalScore >= 25) {
+          yourGourdType = "Gourd King";
+          imageURL = "https://cdn.britannica.com/47/190847-050-BEF036B6/loofah-interior.jpg";
+        } else if (totalScore >= 15) {
+          yourGourdType = "Frances";
           imageURL = "https://cdn.britannica.com/47/190847-050-BEF036B6/loofah-interior.jpg";
         } else {
           yourGourdType = "Gourdja";
