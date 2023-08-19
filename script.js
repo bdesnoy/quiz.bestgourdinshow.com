@@ -181,7 +181,7 @@ function loadNextQuestion () {
           imageURL = "https://cdn.britannica.com/47/190847-050-BEF036B6/loofah-interior.jpg";
         } else {
           yourGourdType = "You Suck :(";
-          imageURL = "https://www.docksidecannabis.com/wp-content/uploads/2020/10/tools10-e1602616718337.jpg"
+          imageURL = "pics/looser.jpg"
         }
       
         result.innerHTML =
