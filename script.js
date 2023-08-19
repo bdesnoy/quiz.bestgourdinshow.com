@@ -59,45 +59,16 @@ const questions = [
     "answer5Total": "5"
   },
   {
-    "question": "Best Sentence to describe you?",
-    "answer1": "You feel superior to other people.",
-    "answer1Total": "3",
-    "answer2": "You consider yourself more practical than creative.",
-    "answer2Total": "2",
-    "answer3":
-      "Winning a debate matters less to you than making sure no one gets upset.",
-    "answer3Total": "1",
-    "answer4": "over 40",
-    "answer4Total": "4",
-    "answer5": "over 50",
-    "answer5Total": "5"
-  },
-  {
-    "question":
-      "You make plans with a friend and they cancel on you, what do you do?",
-    "answer1":
-      "Say \"whatever\" and plan a night that'll be GREAT so they don't cancel again.",
-    "answer1Total": "3",
-    "answer2": "Feel hurt because you were looking forward to tonight.",
-    "answer2Total": "2",
-    "answer3": "No problem, you kinda wanted to stay home anyway.",
-    "answer3Total": "1",
-    "answer4": "over 40",
-    "answer4Total": "4",
-    "answer5": "over 50",
-    "answer5Total": "5"
-  },
-  {
-    "question": "Which of the following colours do you like most?",
-    "answer1": "Black",
+    "question": "If you could add one thing to the BGIS experience, it would be:",
+    "answer1": "Merch Table",
     "answer1Total": "1",
-    "answer2": "Yellow or light blue",
+    "answer2": "A Dance Party",
     "answer2Total": "2",
-    "answer3": "Red or orange",
+    "answer3": "Turkey Drumsticks",
     "answer3Total": "3",
-    "answer4": "over 40",
+    "answer4": "Linear Progression Models",
     "answer4Total": "4",
-    "answer5": "over 50",
+    "answer5": "Pyrotechnics",
     "answer5Total": "5"
   }
 ]
