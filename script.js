@@ -6,7 +6,7 @@
 
 const questions = [
   {
-    "question": "IDeal First Date",
+    "question": "Ideal First Date",
     "answer1": "Drinks and then going back to my place ;) ",
     "answer1Total": "1",
     "answer2": "Salsa Dancing",
@@ -46,6 +46,19 @@ const questions = [
     "answer5Total": "5"
   },
   {
+    "question": "What's your favorite part of Best Gourd in Show?",
+    "answer1": "Seeing everyone dressed up, looking good",
+    "answer1Total": "1",
+    "answer2": "Sharing in Communal Laughter",
+    "answer2Total": "2",
+    "answer3": "Admiring the Artistic talent",
+    "answer3Total": "3",
+    "answer4": "The Prop Bets",
+    "answer4Total": "4",
+    "answer5": "The Stunts",
+    "answer5Total": "5"
+  },
+  {
     "question": "Best Sentence to describe you?",
     "answer1": "You feel superior to other people.",
     "answer1Total": "3",
@@ -57,19 +70,6 @@ const questions = [
     "answer4": "over 40",
     "answer4Total": "4",
     "answer5": "over 50",
-    "answer5Total": "5"
-  },
-  {
-    "question": "What's your favorite part of Best Gourd in Show?",
-    "answer1": "Seeing everyone dressed up, looking good",
-    "answer1Total": "1",
-    "answer2": "Sharing in Communal Laughter",
-    "answer2Total": "2",
-    "answer3": "Admiring the Artistic talent",
-    "answer3Total": "3",
-    "answer4": "The Prop Bets",
-    "answer4Total": "4",
-    "answer5": "The Stunts",
     "answer5Total": "5"
   },
   {
