@@ -156,7 +156,7 @@ function loadNextQuestion () {
           imageURL = "pics/RoboGourd.png";
         } else if (totalScore >= 13) {
           yourGourdType = "Gourd King";
-          imageURL = "pics/Gourd_King.png";
+          imageURL = "pics/Gourd_King.jpg";
         } else if (totalScore >= 9) {
           yourGourdType = "Frances";
           imageURL = "pics/Frances.png";
