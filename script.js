@@ -6,7 +6,7 @@
 
 const questions = [
   {
-    "question": "Ideal First Date",
+    "question": "What is your Ideal First Date?",
     "answer1": "Drinks and then going back to my place ;) ",
     "answer1Total": "1",
     "answer2": "Salsa Dancing",
@@ -33,7 +33,7 @@ const questions = [
   },
   {
     "question":
-      "What would you like to drink?",
+      "What is your goto drink?",
     "answer1": "Whatever you're drinking ",
     "answer1Total": "1",
     "answer2": "Lemonade",
@@ -60,13 +60,13 @@ const questions = [
   },
   {
     "question": "If you could add one thing to the BGIS experience, it would be:",
-    "answer1": "Merch Table",
+    "answer1": "Speed Dating with the Submitters",
     "answer1Total": "1",
     "answer2": "A Dance Party",
     "answer2Total": "2",
     "answer3": "Turkey Drumsticks",
     "answer3Total": "3",
-    "answer4": "Linear Progression Models",
+    "answer4": "Linear Regression Models",
     "answer4Total": "4",
     "answer5": "Pyrotechnics",
     "answer5Total": "5"
