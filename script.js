@@ -179,16 +179,16 @@ function loadNextQuestion () {
         var imageURL;
         if (totalScore >= 33) {
           yourGourdType = "Urp";
-          imageURL = "https://www.southernliving.com/thmb/m5yYV-N0d9LcbpOcrw6quWSjbRE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Squash_001_preview_scale_100_ppi_150_quality_100-e57ac9624ce348adafefcae5577a1fdf.jpg";
+          imageURL = "pics/Urp.png";
         } else if (totalScore >= 30) {
           yourGourdType = "Robo Gourd";
-          imageURL = "https://cdn.britannica.com/47/190847-050-BEF036B6/loofah-interior.jpg";
+          imageURL = "pics/RoboGourd.png";
         } else if (totalScore >= 25) {
           yourGourdType = "Gourd King";
-          imageURL = "https://cdn.britannica.com/47/190847-050-BEF036B6/loofah-interior.jpg";
+          imageURL = "pics/Gourd_King.png";
         } else if (totalScore >= 15) {
           yourGourdType = "Frances";
-          imageURL = "https://cdn.britannica.com/47/190847-050-BEF036B6/loofah-interior.jpg";
+          imageURL = "pics/Frances.png";
         } else {
           yourGourdType = "Gourdja";
           imageURL = "pics/Gourdja.png";
@@ -197,7 +197,7 @@ function loadNextQuestion () {
         result.innerHTML =
          `<h1 class="final-score">${yourGourdType}</h1>
          <div class="summary" style="text-align: center;">
-            <img src=${imageURL} width="60%">
+            <img src=${imageURL} width="80%">
         </div>
         <button class="restart">Restart Quiz</button>
          `;
