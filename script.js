@@ -148,16 +148,16 @@ function loadNextQuestion () {
       
         var yourGourdType;
         var imageURL;
-        if (totalScore >= 33) {
+        if (totalScore >= 21) {
           yourGourdType = "Urp";
           imageURL = "pics/Urp.png";
-        } else if (totalScore >= 30) {
+        } else if (totalScore >= 18) {
           yourGourdType = "Robo Gourd";
           imageURL = "pics/RoboGourd.png";
-        } else if (totalScore >= 25) {
+        } else if (totalScore >= 13) {
           yourGourdType = "Gourd King";
           imageURL = "pics/Gourd_King.png";
-        } else if (totalScore >= 15) {
+        } else if (totalScore >= 9) {
           yourGourdType = "Frances";
           imageURL = "pics/Frances.png";
         } else {
