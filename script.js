@@ -4,78 +4,80 @@
 // in the review thing at the bottom put the images in: imageURL = "pics/looser.jpg";
 // when you're all done, hit commit changes and text brian
 
+const characters = ["Gourdja", "Frances", "Gourd King", "Robo Gourd", "Urp"];
+
 const questions = [
   {
     "question": "What is your Ideal First Date?",
     "answer1": "Drinks and then going back to my place ;) ",
-    "answer1Total": "1",
+    "answer1CharacterIndex": 0,
     "answer2": "Salsa Dancing",
-    "answer2Total": "2",
+    "answer2CharacterIndex": 1,
     "answer3": "Mock Plebeians Together",
-    "answer3Total": "3",
+    "answer3CharacterIndex": 2,
     "answer4": "Watch the ball machine at the Museum of Science",
-    "answer4Total": "4",
+    "answer4CharacterIndex": 3,
     "answer5": "Ride a motorcycle into a Fire",
-    "answer5Total": "5"
+    "answer5CharacterIndex": 4
   },
   {
     "question": "Which of these is your favorite Actor?",
     "answer1": "Channing Tatum",
-    "answer1Total": "1",
+    "answer1CharacterIndex": 0,
     "answer2": "Patrick Swayze",
-    "answer2Total": "2",
+    "answer2CharacterIndex": 1,
     "answer3": "Peter Dinklage",
-    "answer3Total": "3",
+    "answer3haracterIndex": 2,
     "answer4": "Arnold Schwartzenager",
-    "answer4Total": "4",
+    "answer4CharacterIndex": 3,
     "answer5": "Bruce Lee",
-    "answer5Total": "5"
+    "answer5CharacterIndex": 4
   },
   {
     "question":
       "What is your goto drink?",
     "answer1": "Whatever you're drinking ",
-    "answer1Total": "1",
+    "answer1CharacterIndex": 0,
     "answer2": "Lemonade",
-    "answer2Total": "3",
+    "answer2CharacterIndex": 1,
     "answer3": "Fruit of the Vine",
-    "answer3Total": "2",
+    "answer3CharacterIndex": 2,
     "answer4": "Anything But Water",
-    "answer4Total": "4",
+    "answer4CharacterIndex": 3,
     "answer5": "Mountain Dew",
-    "answer5Total": "5"
+    "answer5CharacterIndex": 4
   },
   {
     "question": "What's your favorite part of Best Gourd in Show?",
     "answer1": "Seeing everyone dressed up, looking good",
-    "answer1Total": "1",
+    "answer1CharacterIndex": 0,
     "answer2": "Sharing in Communal Laughter",
-    "answer2Total": "2",
+    "answer2CharacterIndex": 1,
     "answer3": "Admiring the Artistic talent",
-    "answer3Total": "3",
+    "answer3CharacterIndex": 2,
     "answer4": "The Prop Bets",
-    "answer4Total": "4",
+    "answer4CharacterIndex": 3,
     "answer5": "The Stunts",
-    "answer5Total": "5"
+    "answer5CharacterIndex": 4,
   },
   {
     "question": "If you could add one thing to the BGIS experience, it would be:",
     "answer1": "Speed Dating with the Submitters",
-    "answer1Total": "1",
+    "answer1CharacterIndex": 0,
     "answer2": "A Dance Party",
-    "answer2Total": "2",
+    "answer2CharacterIndex": 1,
     "answer3": "Turkey Drumsticks",
-    "answer3Total": "3",
+    "answer3CharacterIndex": 2,
     "answer4": "Linear Regression Models",
-    "answer4Total": "4",
+    "answer4CharacterIndex": 3,
     "answer5": "Pyrotechnics",
-    "answer5Total": "5"
+    "answer5CharacterIndex": 4
   }
 ]
 
 
 let currentQuestion = 0;
-let score = [];
+var score = [0, 0, 0, 0, 0];
 let selectedAnswersData = [];
 const totalQuestions =questions.length;
 
@@ -95,11 +97,11 @@ const result = document.querySelector('.result');
 function generateQuestions (index) {
     //Select each question by passing it a particular index
     const question = questions[index];
-    const option1Total = questions[index].answer1Total;
-    const option2Total = questions[index].answer2Total;
-    const option3Total = questions[index].answer3Total;
-    const option4Total = questions[index].answer4Total;
-    const option5Total = questions[index].answer5Total;
+    const option1Total = questions[index].answer1CharacterIndex;
+    const option2Total = questions[index].answer2CharacterIndex;
+    const option3Total = questions[index].answer3CharacterIndex;
+    const option4Total = questions[index].answer4CharacterIndex;
+    const option5Total = questions[index].answer5CharacterIndex;
     //Populate html elements 
     questionEl.innerHTML = `${index + 1}. ${question.question}`
     option1.setAttribute('data-total', `${option1Total}`);
@@ -126,12 +128,9 @@ function loadNextQuestion () {
     const answerScore = Number(selectedOption.nextElementSibling.getAttribute('data-total'));
 
     ////Add the answer score to the score array
-    score.push(answerScore);
+    score[answerScore] += 1;
 
     selectedAnswersData.push()
-    
-
-    const totalScore = score.reduce((total, currentNum) => total + currentNum);
 
     //Finally we incement the current question number ( to be used as the index for each array)
     currentQuestion++;
@@ -145,24 +144,26 @@ function loadNextQuestion () {
     //If the quiz is finished then we hide the questions container and show the results 
     if(currentQuestion == totalQuestions) {
         container.style.display = 'none';
+
+        let maxScoreIndex = score.indexOf(Math.max(...score));
       
         var yourGourdType;
         var imageURL;
-        if (totalScore >= 21) {
+        if (maxScoreIndex == 4) {
           yourGourdType = "Urp";
-          imageURL = "pics/Urp.png";
-        } else if (totalScore >= 18) {
+          imageURL = "pics/Urp.jpg";
+        } else if (maxScoreIndex == 3) {
           yourGourdType = "Robo Gourd";
-          imageURL = "pics/RoboGourd.png";
-        } else if (totalScore >= 13) {
+          imageURL = "pics/RoboGourd.jpg";
+        } else if (maxScoreIndex == 2) {
           yourGourdType = "Gourd King";
           imageURL = "pics/Gourd_King.jpg";
-        } else if (totalScore >= 9) {
+        } else if (maxScoreIndex == 1) {
           yourGourdType = "Frances";
-          imageURL = "pics/Frances.png";
+          imageURL = "pics/Frances.jpg";
         } else {
           yourGourdType = "Gourdja";
-          imageURL = "pics/Gourdja.png";
+          imageURL = "pics/Gourdja.jpg";
         }
       
         result.innerHTML =
